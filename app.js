@@ -4,7 +4,8 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'https://2023-seoul-data-contest-gqmilcvqu-skywings-kor.vercel.app/maps',  // React 앱이 구동되는 주소
+  origin: "https://2023-seoul-data-contest-gqmilcvqu-skywings-kor.vercel.app/maps",
+  credentials: true,
 }));
 
 const connection = mysql.createConnection({
