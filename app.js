@@ -1,11 +1,11 @@
 const express = require('express');
 const mysql = require('mysql');
-const cors = require('cors');
 const app = express();
+const cors = require('cors');
+
 
 app.use(cors({
-  origin: "https://2023-seoul-data-contest-gqmilcvqu-skywings-kor.vercel.app/maps",
-  credentials: true,
+  origin: "*",
 }));
 
 const connection = mysql.createConnection({
